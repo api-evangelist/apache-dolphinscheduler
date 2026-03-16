@@ -1,0 +1,35 @@
+aid: apache-dolphinscheduler
+name: Apache DolphinScheduler
+description: >-
+  Apache DolphinScheduler is a distributed and extensible workflow scheduler platform with a powerful DAG visual interface. It provides rich workflow management capabilities for data pipeline orchestration with support for multiple task types.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Workflow
+  - Scheduling
+  - Data Pipeline
+  - Orchestration
+  - DAG
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: apache-dolphinscheduler:apache-dolphinscheduler-rest-api
+    name: Apache DolphinScheduler REST API
+    description: >-
+      The DolphinScheduler REST API provides endpoints for managing projects, workflows, tasks, resources, data sources, schedules, alerts, and user/tenant administration.
+    humanURL: https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/guide/open-api.html
+    tags:
+      - REST
+      - Workflow
+      - Scheduling
+    properties:
+      - type: Documentation
+        url: https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/guide/open-api.html
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
