@@ -1,0 +1,14 @@
+{
+  "id": 1001,
+  "code": 8888888888888,
+  "name": "daily-etl-pipeline",
+  "version": 3,
+  "releaseState": "ONLINE",
+  "projectCode": 7777777777777,
+  "description": "Daily ETL pipeline for processing sales data",
+  "globalParams": "[]",
+  "timeout": 60,
+  "tenantCode": "etl-team",
+  "createTime": "2025-03-15T14:30:00Z",
+  "updateTime": "2025-03-20T10:00:00Z"
+}

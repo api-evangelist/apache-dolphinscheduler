@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-task-definition-structure.json",
+  "name": "TaskDefinition",
+  "description": "A task node in a DolphinScheduler workflow definition DAG.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "int32",
+      "description": "Task definition ID.",
+      "example": 2001
+    },
+    "code": {
+      "type": "int32",
+      "description": "Globally unique task code.",
+      "example": 9999999999999
+    },
+    "name": {
+      "type": "string",
+      "description": "Task name within the workflow.",
+      "example": "extract-sales-data"
+    },
+    "taskType": {
+      "type": "string",
+      "description": "Task execution type.",
+      "enum": [
+        "SHELL",
+        "SQL",
+        "SPARK",
+        "FLINK",
+        "PYTHON",
+        "HTTP",
+        "DATAX",
+        "SEATUNNEL",
+        "JUPYTER",
+        "PYTORCH",
+        "CONDITIONS",
+        "SWITCH",
+        "SUB_PROCESS",
+        "DEPENDENT"
+      ],
+      "example": "SPARK"
+    },
+    "taskParams": {
+      "type": "object",
+      "description": "Task-specific parameters (structure varies by taskType)."
+    },
+    "description": {
+      "type": "string",
+      "description": "Task description.",
+      "example": "Extract daily sales data from source database"
+    },
+    "flag": {
+      "type": "string",
+      "description": "Whether this task is enabled.",
+      "enum": [
+        "YES",
+        "NO"
+      ],
+      "default": "YES",
+      "example": "YES"
+    },
+    "taskPriority": {
+      "type": "string",
+      "description": "Task priority for scheduling.",
+      "enum": [
+        "HIGHEST",
+        "HIGH",
+        "MEDIUM",
+        "LOW",
+        "LOWEST"
+      ],
+      "example": "MEDIUM"
+    },
+    "workerGroup": {
+      "type": "string",
+      "description": "Worker group this task should run on.",
+      "default": "default",
+      "example": "default"
+    },
+    "retryTimes": {
+      "type": "int32",
+      "description": "Number of retry attempts on failure.",
+      "minimum": 0,
+      "default": 0,
+      "example": 3
+    },
+    "retryInterval": {
+      "type": "int32",
+      "description": "Interval in minutes between retry attempts.",
+      "default": 1,
+      "example": 5
+    },
+    "timeout": {
+      "type": "int32",
+      "description": "Task execution timeout in minutes.",
+      "default": 0,
+      "example": 30
+    }
+  },
+  "required": [
+    "name",
+    "taskType"
+  ]
+}

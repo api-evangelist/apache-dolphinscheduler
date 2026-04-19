@@ -1,0 +1,130 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "ds": "https://dolphinscheduler.apache.org/schema/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "WorkflowDefinition": "ds:WorkflowDefinition",
+    "WorkflowInstance": "ds:WorkflowInstance",
+    "TaskDefinition": "ds:TaskDefinition",
+    "Schedule": "ds:Schedule",
+    "code": {
+      "@id": "ds:code",
+      "@type": "xsd:integer"
+    },
+    "commandType": {
+      "@id": "ds:commandType",
+      "@type": "xsd:string"
+    },
+    "createTime": {
+      "@id": "ds:createTime",
+      "@type": "xsd:dateTime"
+    },
+    "crontab": {
+      "@id": "ds:crontab",
+      "@type": "xsd:string"
+    },
+    "description": "schema:description",
+    "duration": {
+      "@id": "ds:duration",
+      "@type": "xsd:string"
+    },
+    "endTime": {
+      "@id": "ds:endTime",
+      "@type": "xsd:dateTime"
+    },
+    "failureStrategy": {
+      "@id": "ds:failureStrategy",
+      "@type": "xsd:string"
+    },
+    "flag": {
+      "@id": "ds:flag",
+      "@type": "xsd:string"
+    },
+    "globalParams": {
+      "@id": "ds:globalParams",
+      "@type": "xsd:string"
+    },
+    "host": {
+      "@id": "ds:host",
+      "@type": "xsd:string"
+    },
+    "id": {
+      "@id": "ds:id",
+      "@type": "xsd:integer"
+    },
+    "name": "schema:name",
+    "processDefinitionCode": {
+      "@id": "ds:processDefinitionCode",
+      "@type": "xsd:integer"
+    },
+    "projectCode": {
+      "@id": "ds:projectCode",
+      "@type": "xsd:integer"
+    },
+    "releaseState": {
+      "@id": "ds:releaseState",
+      "@type": "xsd:string"
+    },
+    "retryInterval": {
+      "@id": "ds:retryInterval",
+      "@type": "xsd:integer"
+    },
+    "retryTimes": {
+      "@id": "ds:retryTimes",
+      "@type": "xsd:integer"
+    },
+    "runTimes": {
+      "@id": "ds:runTimes",
+      "@type": "xsd:integer"
+    },
+    "startTime": {
+      "@id": "ds:startTime",
+      "@type": "xsd:dateTime"
+    },
+    "state": {
+      "@id": "ds:state",
+      "@type": "xsd:string"
+    },
+    "taskParams": {
+      "@id": "ds:taskParams",
+      "@type": "@id"
+    },
+    "taskPriority": {
+      "@id": "ds:taskPriority",
+      "@type": "xsd:string"
+    },
+    "taskType": {
+      "@id": "ds:taskType",
+      "@type": "xsd:string"
+    },
+    "tenantCode": {
+      "@id": "ds:tenantCode",
+      "@type": "xsd:string"
+    },
+    "timeout": {
+      "@id": "ds:timeout",
+      "@type": "xsd:integer"
+    },
+    "timezoneId": {
+      "@id": "ds:timezoneId",
+      "@type": "xsd:string"
+    },
+    "updateTime": {
+      "@id": "ds:updateTime",
+      "@type": "xsd:dateTime"
+    },
+    "version": {
+      "@id": "ds:version",
+      "@type": "xsd:integer"
+    },
+    "warningType": {
+      "@id": "ds:warningType",
+      "@type": "xsd:string"
+    },
+    "workerGroup": {
+      "@id": "ds:workerGroup",
+      "@type": "xsd:string"
+    }
+  }
+}

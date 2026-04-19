@@ -1,0 +1,11 @@
+{
+  "id": 301,
+  "processDefinitionCode": 8888888888888,
+  "crontab": "0 0 1 * * ? *",
+  "startTime": "2025-01-01T00:00:00Z",
+  "endTime": "2026-01-01T00:00:00Z",
+  "timezoneId": "America/Los_Angeles",
+  "failureStrategy": "CONTINUE",
+  "warningType": "FAILURE",
+  "releaseState": "ONLINE"
+}

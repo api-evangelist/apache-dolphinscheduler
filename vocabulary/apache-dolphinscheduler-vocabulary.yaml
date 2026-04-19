@@ -1,0 +1,233 @@
+vocabulary: 1.0.0
+info:
+  provider: Apache DolphinScheduler
+  description: Vocabulary for Apache DolphinScheduler, the modern data orchestration platform with DAG-based workflow management.
+  created: '2026-04-19'
+  modified: '2026-04-19'
+operational:
+  apis:
+  - namespace: dolphinscheduler-rest-api
+    version: 3.x
+    baseUrl: http://localhost:12345/dolphinscheduler
+    status: active
+    description: Full REST API for workflow and resource management
+  resources:
+  - name: project
+    description: Organizational unit for workflows
+    actions:
+    - create
+    - update
+    - delete
+    - list
+    - get
+    apis:
+    - dolphinscheduler-rest-api
+  - name: workflow-definition
+    description: DAG workflow definition
+    actions:
+    - create
+    - update
+    - delete
+    - list
+    - get
+    - publish
+    - offline
+    - version
+    apis:
+    - dolphinscheduler-rest-api
+  - name: workflow-instance
+    description: Running or completed workflow execution
+    actions:
+    - list
+    - get
+    - stop
+    - pause
+    - resume
+    - rerun
+    - delete
+    apis:
+    - dolphinscheduler-rest-api
+  - name: task-definition
+    description: Individual task within a workflow DAG
+    actions:
+    - create
+    - update
+    - delete
+    - list
+    - get
+    apis:
+    - dolphinscheduler-rest-api
+  - name: schedule
+    description: Cron-based workflow schedule
+    actions:
+    - create
+    - update
+    - delete
+    - list
+    - online
+    - offline
+    apis:
+    - dolphinscheduler-rest-api
+  - name: data-source
+    description: External database or data source connection
+    actions:
+    - create
+    - update
+    - delete
+    - list
+    - test-connection
+    apis:
+    - dolphinscheduler-rest-api
+  - name: resource
+    description: File or directory resource for tasks
+    actions:
+    - create
+    - upload
+    - download
+    - delete
+    - list
+    apis:
+    - dolphinscheduler-rest-api
+  - name: tenant
+    description: Multi-tenancy isolation unit
+    actions:
+    - create
+    - update
+    - delete
+    - list
+    apis:
+    - dolphinscheduler-rest-api
+  - name: alert
+    description: Alert plugin and alert group
+    actions:
+    - create
+    - delete
+    - list
+    - test
+    apis:
+    - dolphinscheduler-rest-api
+  actions:
+  - name: create
+    description: Create a new resource
+    pattern: write
+  - name: list
+    description: List resources with pagination
+    pattern: read
+  - name: get
+    description: Get a single resource by code or ID
+    pattern: read
+  - name: update
+    description: Update an existing resource
+    pattern: write
+  - name: delete
+    description: Delete a resource
+    pattern: destructive
+  - name: publish
+    description: Release (publish) a workflow definition to ONLINE state
+    pattern: write
+  - name: rerun
+    description: Re-execute a workflow instance
+    pattern: write
+  - name: stop
+    description: Stop a running workflow instance
+    pattern: write
+  schemas:
+    workflow:
+    - WorkflowDefinition
+    - WorkflowInstance
+    tasks:
+    - TaskDefinition
+    scheduling:
+    - Schedule
+  enums:
+    releaseState:
+    - ONLINE
+    - OFFLINE
+    workflowState:
+    - SUBMITTED_SUCCESS
+    - RUNNING_EXECUTION
+    - PAUSE
+    - STOP
+    - FAILURE
+    - SUCCESS
+    - KILL
+    taskType:
+    - SHELL
+    - SQL
+    - SPARK
+    - FLINK
+    - PYTHON
+    - HTTP
+    - DATAX
+    - SEATUNNEL
+    - JUPYTER
+    taskPriority:
+    - HIGHEST
+    - HIGH
+    - MEDIUM
+    - LOW
+    - LOWEST
+    failureStrategy:
+    - CONTINUE
+    - END
+  authentication:
+    schemes:
+    - 'API Token (Authorization: token {token})'
+    - Admin username/password for token generation
+capability:
+  workflows: []
+  personas:
+  - id: data-engineer
+    name: Data Engineer
+    description: Designs and manages data pipelines and ETL workflows using DolphinScheduler DAGs
+  - id: platform-admin
+    name: Platform Administrator
+    description: Manages tenants, users, resources, and system configuration
+  - id: data-scientist
+    name: Data Scientist
+    description: Schedules ML training and inference workflows using Python or Jupyter task types
+  domains:
+  - name: Workflow Orchestration
+    description: DAG-based scheduling and execution of multi-step data pipelines
+  - name: Resource Management
+    description: Files, scripts, and dependencies used by workflow tasks
+  - name: Multi-Tenancy
+    description: Tenant and permission isolation for team-based workflow management
+  namespaces: []
+  binds: []
+crossReference:
+- resource: workflow-definition
+  operations:
+  - create
+  - publish
+  - list
+  workflows: []
+  personas:
+  - data-engineer
+- resource: workflow-instance
+  operations:
+  - list
+  - get
+  - rerun
+  - stop
+  workflows: []
+  personas:
+  - data-engineer
+  - platform-admin
+- resource: schedule
+  operations:
+  - create
+  - online
+  - offline
+  workflows: []
+  personas:
+  - data-engineer
+  - platform-admin
+- resource: task-definition
+  operations:
+  - create
+  - update
+  workflows: []
+  personas:
+  - data-engineer
+  - data-scientist

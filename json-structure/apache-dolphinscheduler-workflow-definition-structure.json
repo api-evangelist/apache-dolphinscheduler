@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-workflow-definition-structure.json",
+  "name": "WorkflowDefinition",
+  "description": "A workflow (process) definition in Apache DolphinScheduler, representing a DAG of tasks.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "int32",
+      "description": "Unique workflow definition ID.",
+      "example": 1001
+    },
+    "code": {
+      "type": "int32",
+      "description": "Globally unique code for the workflow definition.",
+      "example": 8888888888888
+    },
+    "name": {
+      "type": "string",
+      "description": "Workflow definition name.",
+      "example": "daily-etl-pipeline"
+    },
+    "version": {
+      "type": "int32",
+      "description": "Version number of this workflow definition.",
+      "example": 3
+    },
+    "releaseState": {
+      "type": "string",
+      "description": "Whether the workflow is online (released) or offline.",
+      "enum": [
+        "ONLINE",
+        "OFFLINE"
+      ],
+      "example": "ONLINE"
+    },
+    "projectCode": {
+      "type": "int32",
+      "description": "Code of the project this workflow belongs to.",
+      "example": 7777777777777
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of the workflow.",
+      "example": "Daily ETL pipeline for processing sales data"
+    },
+    "globalParams": {
+      "type": "string",
+      "description": "Global parameters for this workflow in JSON format.",
+      "example": "[]"
+    },
+    "timeout": {
+      "type": "int32",
+      "description": "Workflow execution timeout in minutes. 0 means no timeout.",
+      "example": 60
+    },
+    "tenantCode": {
+      "type": "string",
+      "description": "Tenant code for resource isolation.",
+      "example": "etl-team"
+    },
+    "createTime": {
+      "type": "datetime",
+      "description": "ISO 8601 creation timestamp.",
+      "example": "2025-03-15T14:30:00Z"
+    },
+    "updateTime": {
+      "type": "datetime",
+      "description": "ISO 8601 last update timestamp.",
+      "example": "2025-03-20T10:00:00Z"
+    }
+  },
+  "required": [
+    "name",
+    "projectCode"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-schema/apache-dolphinscheduler-workflow-instance-schema.json",
+  "title": "WorkflowInstance",
+  "description": "A running or completed instance of a workflow definition in Apache DolphinScheduler.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Unique workflow instance ID.",
+      "example": 500123
+    },
+    "processDefinitionCode": {
+      "type": "integer",
+      "description": "Code of the workflow definition that created this instance.",
+      "example": 8888888888888
+    },
+    "name": {
+      "type": "string",
+      "description": "Workflow instance name (typically includes a timestamp).",
+      "example": "daily-etl-pipeline-20250315"
+    },
+    "state": {
+      "type": "string",
+      "description": "Execution state of this workflow instance.",
+      "enum": [
+        "SUBMITTED_SUCCESS",
+        "RUNNING_EXECUTION",
+        "PAUSE",
+        "STOP",
+        "FAILURE",
+        "SUCCESS",
+        "NEED_FAULT_TOLERANCE",
+        "KILL",
+        "WAITING_THREAD",
+        "WAITING_DEPEND",
+        "DELAY_EXECUTION",
+        "FORCED_SUCCESS",
+        "SERIAL_WAIT"
+      ],
+      "example": "RUNNING_EXECUTION"
+    },
+    "startTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Execution start time.",
+      "example": "2025-03-15T14:30:00Z"
+    },
+    "endTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Execution end time (null if still running).",
+      "example": "2025-03-15T15:00:00Z"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Human-readable execution duration.",
+      "example": "30m 0s"
+    },
+    "runTimes": {
+      "type": "integer",
+      "description": "Number of times this instance has been re-run.",
+      "example": 1
+    },
+    "commandType": {
+      "type": "string",
+      "description": "Type of command that triggered this instance.",
+      "example": "START_PROCESS"
+    },
+    "host": {
+      "type": "string",
+      "description": "Worker host that is executing this instance.",
+      "example": "worker-01:1234"
+    }
+  }
+}

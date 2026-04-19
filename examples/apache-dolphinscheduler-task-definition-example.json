@@ -1,0 +1,14 @@
+{
+  "id": 2001,
+  "code": 9999999999999,
+  "name": "extract-sales-data",
+  "taskType": "SPARK",
+  "taskParams": {},
+  "description": "Extract daily sales data from source database",
+  "flag": "YES",
+  "taskPriority": "MEDIUM",
+  "workerGroup": "default",
+  "retryTimes": 3,
+  "retryInterval": 5,
+  "timeout": 30
+}

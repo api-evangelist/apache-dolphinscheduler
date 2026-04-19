@@ -1,0 +1,12 @@
+{
+  "id": 500123,
+  "processDefinitionCode": 8888888888888,
+  "name": "daily-etl-pipeline-20250315",
+  "state": "RUNNING_EXECUTION",
+  "startTime": "2025-03-15T14:30:00Z",
+  "endTime": "2025-03-15T15:00:00Z",
+  "duration": "30m 0s",
+  "runTimes": 1,
+  "commandType": "START_PROCESS",
+  "host": "worker-01:1234"
+}
