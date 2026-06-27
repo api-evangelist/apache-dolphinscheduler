@@ -47,7 +47,7 @@ apis:
       url: https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/start/quick-start.html
     - type: GitHubRepository
       url: https://github.com/apache/dolphinscheduler
-    - type: SDK
+    - type: SDKs
       url: https://pypi.org/project/apache-airflow-providers-apache-dolphinscheduler/
       title: Python SDK (PyDolphinScheduler)
     - type: Tools
@@ -78,13 +78,13 @@ apis:
       url: https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-workflow-instance-structure.json
     - type: JSONLD
       url: https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-ld/apache-dolphinscheduler-context.jsonld
-    - type: Example
+    - type: Examples
       url: https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-schedule-example.json
-    - type: Example
+    - type: Examples
       url: https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-task-definition-example.json
-    - type: Example
+    - type: Examples
       url: https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-workflow-definition-example.json
-    - type: Example
+    - type: Examples
       url: https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-workflow-instance-example.json
 maintainers:
   - FN: Kin Lane
@@ -102,7 +102,7 @@ common:
     url: https://github.com/apache
   - type: GitHubRepository
     url: https://github.com/apache/dolphinscheduler
-  - type: SDK
+  - type: SDKs
     url: https://github.com/apache/dolphinscheduler-sdk-python
     title: PyDolphinScheduler Python SDK
   - type: Features
