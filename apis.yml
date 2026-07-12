@@ -90,6 +90,10 @@ maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
 common:
+  - type: VulnerabilityDisclosure
+    url: security/apache-dolphinscheduler-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/apache-dolphinscheduler-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/apache-dolphinscheduler
   - type: Portal
