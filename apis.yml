@@ -24,6 +24,15 @@ tags:
   - Apache
   - DAG
   - Data Pipeline
+  - Open-Source
+  - Orchestration
+  - Python
+  - Scheduling
+  - Workflows
+tags_raw:
+  - Apache
+  - DAG
+  - Data Pipeline
   - Open Source
   - Orchestration
   - Python
@@ -42,6 +51,17 @@ apis:
       Authentication is via API token. A Swagger UI is available at /dolphinscheduler/swagger-ui/index.html.
     humanURL: https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/guide/open-api.html
     tags:
+    - Alerts
+    - DAG
+    - Data Sources
+    - Project
+    - REST
+    - Resources
+    - Scheduling
+    - Task
+    - Tenants
+    - Workflows
+    tags_raw:
     - Alerts
     - DAG
     - Data Sources
