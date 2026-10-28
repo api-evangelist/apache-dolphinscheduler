@@ -1,4 +1,4 @@
-# Apache DolphinScheduler (apache-dolphinscheduler)
+# Apache DolphinScheduler
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,132 +66,148 @@
 
 Apache DolphinScheduler is a modern distributed and extensible data orchestration platform governed by the Apache Software Foundation. It provides a DAG-based visual workflow designer, multi-master/multi-worker architecture for horizontal scaling, and a comprehensive REST API for programmatic control. It supports dozens of task types (Shell, Spark, Flink, SQL, Python, HTTP, etc.), multi-cloud deployments, multi-tenancy, backfill, and a Python SDK (PyDolphinScheduler).
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/apis.yml)
+**Areas:** Apache · DAG · Data Pipeline · Open Source · Orchestration · Python · Scheduling · Workflows
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Apache DolphinScheduler on APIs.io
 
-## Tags:
+Everything profiled for Apache DolphinScheduler is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/apache-dolphinscheduler/](https://apis.io/providers/apache-dolphinscheduler/)** — or go straight to one of the APIs or properties below.
 
- - Apache, DAG, Data Pipeline, Open Source, Orchestration, Python, Scheduling, Workflow
+### APIs (1)
 
-## Timestamps
+- [Apache DolphinScheduler REST API](https://apis.io/apis/apache-dolphinscheduler/apache-dolphinscheduler-rest-api/) — The DolphinScheduler REST API enables programmatic management of projects, workflow definitions (DAGs), workflow instances, task types, schedules,…
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Apache DolphinScheduler REST API
-The DolphinScheduler REST API enables programmatic management of projects, workflow definitions (DAGs), workflow instances, task types, schedules, resources, data sources, alerts, tenants, and users. Authentication is via API token. A Swagger UI is available at /dolphinscheduler/swagger-ui/index.html.
+#### JSON Schema (4)
 
-**Human URL:** [https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/guide/open-api.html](https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/guide/open-api.html)
+The data models the API reads and writes.
 
-#### Tags:
+- [Schedule](https://apis.io/schemas/apache-dolphinscheduler/apache-dolphinscheduler-schedule/)
+- [TaskDefinition](https://apis.io/schemas/apache-dolphinscheduler/apache-dolphinscheduler-task-definition/)
+- [WorkflowDefinition](https://apis.io/schemas/apache-dolphinscheduler/apache-dolphinscheduler-workflow-definition/)
+- [WorkflowInstance](https://apis.io/schemas/apache-dolphinscheduler/apache-dolphinscheduler-workflow-instance/)
 
- - Alerts, DAG, Data Sources, Projects, REST, Resources, Scheduling, Tasks, Tenants, Workflow
+#### JSON Structure (4)
 
-#### Properties
+Data models expressed in JSON Structure.
 
-- [Documentation](https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/guide/open-api.html)
-- [GettingStarted](https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/start/quick-start.html)
-- [GitHubRepository](https://github.com/apache/dolphinscheduler)
-- [Python SDK (PyDolphinScheduler)](https://pypi.org/project/apache-airflow-providers-apache-dolphinscheduler/)
-- [Docker Image](https://hub.docker.com/r/apache/dolphinscheduler-standalone-server)
-- [Kubernetes Operator](https://github.com/apache/dolphinscheduler-operator)
-- [Schedule](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-schema/apache-dolphinscheduler-schedule-schema.json)
-- [Task Definition](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-schema/apache-dolphinscheduler-task-definition-schema.json)
-- [Workflow Definition](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-schema/apache-dolphinscheduler-workflow-definition-schema.json)
-- [Workflow Instance](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-schema/apache-dolphinscheduler-workflow-instance-schema.json)
-- [JSONStructure](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-schedule-structure.json)
-- [JSONStructure](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-task-definition-structure.json)
-- [JSONStructure](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-workflow-definition-structure.json)
-- [JSONStructure](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-structure/apache-dolphinscheduler-workflow-instance-structure.json)
-- [JSONLD](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/json-ld/apache-dolphinscheduler-context.jsonld)
-- [Example](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-schedule-example.json)
-- [Example](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-task-definition-example.json)
-- [Example](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-workflow-definition-example.json)
-- [Example](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/examples/apache-dolphinscheduler-workflow-instance-example.json)
+- [Apache Dolphinscheduler Schedule Structure](https://apis.io/json-structure/apache-dolphinscheduler/apache-dolphinscheduler-schedule-structure/)
+- [Apache Dolphinscheduler Task Definition Structure](https://apis.io/json-structure/apache-dolphinscheduler/apache-dolphinscheduler-task-definition-structure/)
+- [Apache Dolphinscheduler Workflow Definition Structure](https://apis.io/json-structure/apache-dolphinscheduler/apache-dolphinscheduler-workflow-definition-structure/)
+- [Apache Dolphinscheduler Workflow Instance Structure](https://apis.io/json-structure/apache-dolphinscheduler/apache-dolphinscheduler-workflow-instance-structure/)
 
-## Common Properties
+#### JSON-LD (1)
 
-- [Portal](https://dolphinscheduler.apache.org/)
+Linked-data contexts for the provider's vocabulary.
+
+- [Apache Dolphinscheduler Context](https://apis.io/jsonld/apache-dolphinscheduler/apache-dolphinscheduler-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Apache Dolphinscheduler Vocabulary](https://apis.io/vocabularies/apache-dolphinscheduler/apache-dolphinscheduler-vocabulary/)
+
+#### Examples (4)
+
+Example requests and responses.
+
+- [Apache Dolphinscheduler Schedule Example](https://apis.io/examples/apache-dolphinscheduler/apache-dolphinscheduler-schedule-example/)
+- [Apache Dolphinscheduler Task Definition Example](https://apis.io/examples/apache-dolphinscheduler/apache-dolphinscheduler-task-definition-example/)
+- [Apache Dolphinscheduler Workflow Definition Example](https://apis.io/examples/apache-dolphinscheduler/apache-dolphinscheduler-workflow-definition-example/)
+- [Apache Dolphinscheduler Workflow Instance Example](https://apis.io/examples/apache-dolphinscheduler/apache-dolphinscheduler-workflow-instance-example/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Apache DolphinScheduler — jsonschema rules](https://apis.io/rules/apache-dolphinscheduler/apache-dolphinscheduler-jsonschema-spectral-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Apache Dolphinscheduler Domain Security](https://apis.io/security/apache-dolphinscheduler/apache-dolphinscheduler-domain-security/)
+- [Apache Dolphinscheduler Vulnerability Disclosure](https://apis.io/security/apache-dolphinscheduler/apache-dolphinscheduler-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Apache Dolphinscheduler Plans Pricing](https://apis.io/plans/apache-dolphinscheduler/apache-dolphinscheduler-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Apache Dolphinscheduler Rate Limits](https://apis.io/rate-limits/apache-dolphinscheduler/apache-dolphinscheduler-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Apache Dolphinscheduler Finops](https://apis.io/finops/apache-dolphinscheduler/apache-dolphinscheduler-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.apache.org/)
 - [Documentation](https://dolphinscheduler.apache.org/en-us/docs/latest/)
-- [GettingStarted](https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/start/quick-start.html)
-- [GitHubOrganization](https://github.com/apache)
-- [GitHubRepository](https://github.com/apache/dolphinscheduler)
-- [PyDolphinScheduler Python SDK](https://github.com/apache/dolphinscheduler-sdk-python)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/apache-dolphinscheduler/refs/heads/main/vocabulary/apache-dolphinscheduler-vocabulary.yaml)
+- [Getting started](https://dolphinscheduler.apache.org/en-us/docs/latest/user_doc/start/quick-start.html)
+- [GitHub](https://github.com/apache)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| DAG Visual Workflow Designer | Web-based drag-and-drop interface for building directed acyclic graph (DAG) workflows with real-time execution visualization. |
-| REST Open API | Comprehensive REST API for all platform operations including workflow management, scheduling, resource management, and administration. |
-| Multi-Master/Worker Architecture | Decentralized architecture with horizontal scaling support, capable of processing tens of millions of tasks per day. |
-| Rich Task Types | Built-in task types including Shell, Spark, Flink, SQL, Python, HTTP, DataX, Seatunnel, Jupyter, and custom task plugins. |
-| Multi-Tenancy | Supports multiple tenants with isolated resource quotas, permissions, and workflow namespaces. |
-| Workflow Versioning | Version control for workflow definitions and instances, enabling rollback and auditing of workflow changes. |
-| Data Source Management | Unified data source management supporting MySQL, PostgreSQL, Hive, Trino, Spark, ClickHouse, and many other databases. |
-| Python SDK | PyDolphinScheduler allows defining and managing workflows programmatically in Python with code-first workflow authoring. |
+**Kin Score 32.6** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 33.2 |
+| Contract governance | 9.8 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 7.9 |
 
-| Name | Description |
-|------|-------------|
-| Data Pipeline Orchestration | Orchestrate complex ETL/ELT data pipelines with dependencies, retries, and monitoring across distributed systems. |
-| Machine Learning Workflows | Schedule and manage ML model training, evaluation, and deployment pipelines with task dependencies. |
-| Multi-Cloud Data Workflows | Orchestrate workflows spanning multiple cloud providers and data centers with unified scheduling. |
-| SQL and Analytics Scheduling | Schedule recurring SQL queries, reports, and analytics jobs against multiple data sources. |
-| DevOps and CI/CD Pipelines | Automate deployment workflows, data quality checks, and operational tasks with DolphinScheduler DAGs. |
+**Agent readiness 1.9** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Apache Spark | Native Spark task type for submitting Spark batch and streaming jobs from DolphinScheduler workflows. |
-| Apache Flink | Native Flink task type for submitting Flink stream processing jobs. |
-| Apache Hive | Hive data source and task type for SQL-on-Hadoop workloads. |
-| Kubernetes | Kubernetes deployment mode and K8s task type for container-native workflow execution. |
-| Docker | Official Docker images and Docker Compose configuration for rapid deployment. |
-| DataX / SeaTunnel | Native task types for DataX and SeaTunnel data integration frameworks. |
-| Apache Airflow | An Airflow provider package allows triggering DolphinScheduler workflows from Airflow DAGs. |
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/apache-dolphinscheduler/](https://apis.io/providers/apache-dolphinscheduler/).
 
-Machine-readable schemas for Apache DolphinScheduler workflow, task, and scheduling models.
+## How this profile is made
 
-### JSON Schema
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-- [Schedule](json-schema/apache-dolphinscheduler-schedule-schema.json)
-- [Task Definition](json-schema/apache-dolphinscheduler-task-definition-schema.json)
-- [Workflow Definition](json-schema/apache-dolphinscheduler-workflow-definition-schema.json)
-- [Workflow Instance](json-schema/apache-dolphinscheduler-workflow-instance-schema.json)
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Apache DolphinScheduler: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-### JSON Structure
+## Open an issue
 
-- [Schedule](json-structure/apache-dolphinscheduler-schedule-structure.json)
-- [Task Definition](json-structure/apache-dolphinscheduler-task-definition-structure.json)
-- [Workflow Definition](json-structure/apache-dolphinscheduler-workflow-definition-structure.json)
-- [Workflow Instance](json-structure/apache-dolphinscheduler-workflow-instance-structure.json)
-
-### JSON-LD
-
-- [Apache Dolphinscheduler](json-ld/apache-dolphinscheduler-context.jsonld)
-
-### Examples
-
-- [Schedule](examples/apache-dolphinscheduler-schedule-example.json)
-- [Task Definition](examples/apache-dolphinscheduler-task-definition-example.json)
-- [Workflow Definition](examples/apache-dolphinscheduler-workflow-definition-example.json)
-- [Workflow Instance](examples/apache-dolphinscheduler-workflow-instance-example.json)
-
-## Vocabulary
-
-- [Apache DolphinScheduler Vocabulary](vocabulary/apache-dolphinscheduler-vocabulary.yaml) — Taxonomy mapping 9 resources, 8 actions, and 3 personas across DolphinScheduler workflow orchestration
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** info@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/apache-dolphinscheduler/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
